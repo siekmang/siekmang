@@ -1,1 +1,3 @@
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=siekmangE&layout=compact&theme=vision-glow&hide_border=true)](https://github.com/anuraghazra/github-readme-stats)
+<p align="left">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=siekmang&layout=compact&theme=vision-glow&hide_border=true" alt="Top Langs" />
+</p>
