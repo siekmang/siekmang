@@ -5,5 +5,11 @@
 #### ⚡ Recent Activity
 
 <!--START_SECTION:activity-->
+1. 🎉 Merged PR [#80](https://github.com/Unity-Environmental-University/lxd-tools/pull/80) in [Unity-Environmental-University/lxd-tools](https://github.com/Unity-Environmental-University/lxd-tools)
+2. 💪 Opened PR [#80](https://github.com/Unity-Environmental-University/lxd-tools/pull/80) in [Unity-Environmental-University/lxd-tools](https://github.com/Unity-Environmental-University/lxd-tools)
+3. 🎉 Merged PR [#79](https://github.com/Unity-Environmental-University/lxd-tools/pull/79) in [Unity-Environmental-University/lxd-tools](https://github.com/Unity-Environmental-University/lxd-tools)
+4. 💪 Opened PR [#79](https://github.com/Unity-Environmental-University/lxd-tools/pull/79) in [Unity-Environmental-University/lxd-tools](https://github.com/Unity-Environmental-University/lxd-tools)
+5. 🎉 Merged PR [#78](https://github.com/Unity-Environmental-University/lxd-tools/pull/78) in [Unity-Environmental-University/lxd-tools](https://github.com/Unity-Environmental-University/lxd-tools)
+<!--END_SECTION:activity-->
 
 ---
