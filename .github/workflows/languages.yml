@@ -1,0 +1,24 @@
+name: Update Stats
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs every night
+  workflow_dispatch: # Allows you to run it manually
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate Top Langs
+        uses: soulteary/github-readme-stats-action@v1.0.0
+        with:
+          card: top-langs
+          options: "username=siekmang&layout=compact&theme=vision-glow&count_private=true"
+          path: profile/top-langs.svg
+          token: ${{ secrets.GH_TOKEN }}
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Update stats" || exit 0
+          git push
