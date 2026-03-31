@@ -1,1 +1,1 @@
-<img src="./profile/top-langs.svg" />
+<img src="github-metrics.svg" />
