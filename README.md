@@ -1,1 +1,1 @@
-<img src="github-metrics.svg" />
+<img src="./github-stats/bar_by_weighted.png" width="400" align="right" />
