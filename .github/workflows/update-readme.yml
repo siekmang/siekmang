@@ -1,21 +1,26 @@
-name: Update Activity
-
+name: Update Projects
 on:
-  schedule:
-    - cron: "0 * * * *"
+  schedule: [{ cron: "0 * * * *" }]
   workflow_dispatch:
-
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    permissions: { contents: write }
     steps:
       - uses: actions/checkout@v4
-      - name: GitHub - Activity - Readme
-        uses: jamesgeorge007/github-activity-readme@v0.5.0
+      - name: Fetch Top 3 Repos
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        with:
-          COMMIT_MSG: "chore: update activity"
-          MAX_LINES: 3
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          # Get top 3 repos by last push, formatted as Markdown links
+          REPOS=$(gh repo list --limit 3 --sort pushed --json name,url,description --template '{{range .}}* [{{.name}}]({{.url}}) - {{.description}}{{"\n"}}{{end}}')
+
+          # Use sed to swap the content between the tags
+          sed -i "//,// { //!d; }" README.md
+          sed -i "//a $REPOS" README.md
+
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add README.md
+          git commit -m "Update recent projects" || exit 0
+          git push
