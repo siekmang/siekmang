@@ -1,3 +1,1 @@
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=siekmang&layout=compact&theme=vision-glow&hide_border=true" alt="Top Langs" />
-</p>
+![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=siekmang&layout=compact&theme=tokyonight&hide_border=true)
